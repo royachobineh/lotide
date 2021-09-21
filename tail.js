@@ -1,9 +1,4 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    return `Assertion Passed: ${actual} === ${expected}`;
-  }
-  return `Assertion Failed: ${actual} !== ${expected}`;
-};
-
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+const tail = function(arr){
+  return arr.slice(arr[0]);
+}
+module.exports = tail;
